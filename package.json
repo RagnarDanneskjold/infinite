@@ -1,0 +1,21 @@
+{
+    "name": "infinite",
+    "version": "0.0.1",
+    "description": "Inifite zero-downtime server restarts",
+    "keywords": ["uber"],
+    "author": "Amos Barreto <amos.barreto@gmail.com>",
+    "scripts": {
+        "test": "npm run jshint && ./scripts/test.sh",
+        "jshint": "./scripts/jshint.sh"
+    },
+    "dependencies": {
+        "async": "*",
+        "winston": "1.0.x"
+    },
+    "devDependencies": {
+        "jshint": "*"
+    },
+    "main": "index",
+    "engines": { "node": "0.8.x" },
+    "repository": { "type": "git", "url": "git://github.com/uber/infinite.git" }
+}
