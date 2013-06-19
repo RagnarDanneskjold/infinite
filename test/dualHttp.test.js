@@ -5,7 +5,6 @@ var testProcPid;
 exports.testStart = function (test) {
     testProc = cp.fork('test/dualHttpServer.js');//, null, {detached: true});
     testProcPid = testProc.pid;
-    console.log('testProcPid = ' + testProcPid);
     setTimeout(test.done, 100);
 };
 

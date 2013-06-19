@@ -12,7 +12,6 @@ infinite.register('httpServer1', httpServer1);
 httpServer1.listen(1337, 'localhost');
 
 infinite.on('exit', function () {
-    console.log('exit');
     httpServer1.close(function () {
         process.exit();
     });
