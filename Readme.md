@@ -3,6 +3,31 @@
 
   Inifite zero-downtime server restarts
 
+## Usage
+
+```javascript
+var http = require('http');
+var fork = require('child_process').fork;
+
+// Invoke infinite restart on SIGTERM
+infinite.forkOn('SIGTERM');
+
+var server = http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('okay');
+});
+
+// Register the server(s) handles which should be handed off to forked process
+infinite.register('httpServer', server);
+
+// Listen only after registering
+server.listen(1337, 'localhost');
+```
+
+## TODO
+
+Support to TCP servers and sockets
+
 ## License
 
 (The MIT License)
