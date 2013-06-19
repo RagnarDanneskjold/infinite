@@ -2,10 +2,10 @@
 echo Running tests...
 
 if [ "$TESTS" == "" ]; then
-    TESTS="./test/*.js"
+    TESTS="test/*.test.js"
 fi
 
-NODE_ENV=test ./node_modules/.bin/mocha $TESTS --reporter list --timeout 10s
+NODE_ENV=test nodeunit $TESTS
 
 TEST_STATUS=$?
 

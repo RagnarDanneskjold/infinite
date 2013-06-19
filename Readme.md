@@ -7,7 +7,7 @@
 
 (The MIT License)
 
-Copyright (c) 2013 Amos Barreto &lt;amos.barreto@gmail.com&gt;
+Copyright (c) 2013 Amos Barreto <amos.barreto@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
