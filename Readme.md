@@ -1,13 +1,13 @@
 
 # infinite [![Build Status](https://travis-ci.org/uber/infinite.png?branch=master)](https://travis-ci.org/uber/infinite)
 
-  Inifite zero-downtime server restarts
+  Zero-downtime server restarts for Node.js
 
 ## Usage
 
 ```javascript
 var http = require('http');
-var fork = require('child_process').fork;
+var infinite = require('infinite');
 
 // Invoke infinite restart on SIGTERM
 infinite.forkOn('SIGTERM');
@@ -17,7 +17,7 @@ var server = http.createServer(function (req, res) {
     res.end('okay');
 });
 
-// Register the server(s) handles which should be handed off to forked process
+// Register the server handle to send to forked process
 infinite.register('httpServer', server);
 
 // Listen only after registering
