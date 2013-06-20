@@ -1,5 +1,5 @@
 {
-    "name": "infinite",
+    "name": "node-infinite",
     "version": "0.0.1",
     "description": "Zero-downtime server restarts",
     "keywords": ["uber"],

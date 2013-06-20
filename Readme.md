@@ -1,5 +1,5 @@
 
-# infinite [![Build Status](https://travis-ci.org/uber/infinite.png?branch=master)](https://travis-ci.org/uber/infinite)
+# node-infinite [![Build Status](https://travis-ci.org/uber/infinite.png?branch=master)](https://travis-ci.org/uber/infinite)
 
   Zero-downtime server restarts for Node.js
 
@@ -7,7 +7,7 @@
 
 ```javascript
 var http = require('http');
-var infinite = require('infinite');
+var infinite = require('node-infinite');
 
 // Invoke infinite restart on SIGTERM
 infinite.forkOn('SIGTERM');
