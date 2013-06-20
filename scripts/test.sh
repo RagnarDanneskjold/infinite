@@ -5,7 +5,7 @@ if [ "$TESTS" == "" ]; then
     TESTS="test/*.test.js"
 fi
 
-NODE_ENV=test nodeunit $TESTS
+NODE_ENV=test ./node_modules/.bin/nodeunit $TESTS
 
 TEST_STATUS=$?
 
